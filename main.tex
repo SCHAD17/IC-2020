@@ -27,7 +27,7 @@
 % a língua principal do documento deve vir POR ÚLTIMO.
 
 % Versão de defesa
-\documentclass[defesa,oneside,english,brazilian]{ppginf}
+%\documentclass[defesa,oneside,english,brazilian]{ppginf}
 
 % Versão de defesa em inglês
 %\documentclass[defesa,oneside,brazilian,english]{ppginf}
@@ -36,7 +36,7 @@
 %\documentclass[final,oneside,english,brazilian]{ppginf}
 
 % Versão final para impressão (frente/verso)
-%\documentclass[final,twoside,english,brazilian]{ppginf}
+\documentclass[final,twoside,english,brazilian]{ppginf}
 
 % configurações de diversos pacotes, inclusive a fonte usada no texto
 \include{packages}
@@ -49,16 +49,16 @@
 % Campos não utilizados podem ser removidos ou comentados.
 
 % título
-\title{Um modelo \LaTeX\ para dissertações e teses \\ (escrevi um título mais longo para ver como se comporta a quebra de linhas e o espaçamento entre elas)}
+\title{Sistemas de armazenamento de energia para microrredes e veículos elétricos}
 
 % palavras-chave e keywords (p/ resumo, abstract e metadados do PDF)
-\pchave{Palavra-chave 1. Palavra-chave 2. Palavra-chave 3.}
-\keyword{Keyword 1. Keyword 2. Keyword 3.}
+%\pchave{Palavra-chave 1. Palavra-chave 2. Palavra-chave 3.}
+%\keyword{Keyword 1. Keyword 2. Keyword 3.}
 
 % autoria
-\author{Carlos Alberto Maziero}
-\advisor{Donald Knuth}
-\coadvisor{Leslie Lamport}
+\author{Gabriel Janetzky Pensky}
+\advisor{Rogers Demonti}
+%\coadvisor{Leslie Lamport}
 
 % instituição
 \IfLanguageName{brazilian}
@@ -68,14 +68,14 @@
   { \instit{UFPR}{Universidade Federal do Paraná} }
 
 % área de concentração (default do PPGInf, não mudar)
-\IfLanguageName{brazilian}
-  { \field{Ciência da Computação} }
+%\IfLanguageName{brazilian}
+%  { \field{Ciência da Computação} }
 % a Bib/UFPR exige que tudo seja em português, exceto o título :-(
 %  { \field{Computer Science} }
-  { \field{Ciência da Computação} }
+%  { \field{Ciência da Computação} }
 
 % data (só o ano)
-\date{2018}
+\date{2020}
 
 % local
 \IfLanguageName{brazilian}
@@ -95,7 +95,7 @@
 % em português, mesmo em documentos em outras línguas. Vá entender...
 
 % tese de doutorado
-\descr{Tese apresentada como requisito parcial à obtenção do grau de Doutor em Ciência da Computação no Programa de Pós-Graduação em Informática, Setor de Ciências Exatas, da Universidade Federal do Paraná}
+%\descr{Tese apresentada como requisito parcial à obtenção do grau de Doutor em Ciência da Computação no Programa de Pós-Graduação em Informática, Setor de Ciências Exatas, da Universidade Federal do Paraná}
 
 % exame de qualificação de doutorado
 %\descr{Documento apresentado como requisito parcial ao exame de qualificação de Doutorado no Programa de Pós-Graduação em Informática, Setor de Ciências Exatas, da Universidade Federal do Paraná}
@@ -108,6 +108,9 @@
 
 % trabalho de conclusão de curso
 %\descr{Trabalho apresentado como requisito parcial à conclusão do Curso de Bacharelado em XYZ, Setor de Ciências Exatas, da Universidade Federal do Paraná}
+
+% relatório final de IC
+\descr{Relatório apresentado à Coordenação de Iniciação Científica e Tecnológica da Universidade Federal do Paraná como requisito parcial da conclusão das atividades de Iniciação Científica ou Iniciação em desenvolvimento tecnológico e Inovação - Edital 2019}
 
 % trabalho de disciplina
 %\descr{Trabalho apresentado como requisito parcial à conclusão da disciplina XYZ no Curso de Bacharelado em XYZ, Setor de Ciências Exatas, da Universidade Federal do Paraná}
@@ -134,21 +137,21 @@
 \titlepage
 
 % páginas que só aparecem na versão final (a inclusão é automática)
-\include{0-iniciais/catalografica}	% ficha catalográfica
-\include{0-iniciais/aprovacao}		% folha de aprovação
-\include{0-iniciais/dedica}		% dedicatória
-\include{0-iniciais/agradece}		% agradecimentos
+%\include{0-iniciais/catalografica}	% ficha catalográfica
+%\include{0-iniciais/aprovacao}		% folha de aprovação
+%\include{0-iniciais/dedica}		% dedicatória
+%\include{0-iniciais/agradece}		% agradecimentos
 
 % resumo (português) e abstract (inglês)
 \include{0-iniciais/resumo}
-\include{0-iniciais/abstract}
+%\include{0-iniciais/abstract}
 
 % listas  de figuras, tabelas, abreviações/siglas, símbolos
 \listoffigures				% figuras
 \clearpage
 \listoftables				% tabelas
-\include{0-iniciais/acronimos}		% acrônimos, deve ser preenchida à mão
-\include{0-iniciais/simbolos}		% símbolos, idem
+%\include{0-iniciais/acronimos}		% acrônimos, deve ser preenchida à mão
+%\include{0-iniciais/simbolos}		% símbolos, idem
 \tableofcontents			% sumário
 
 %=====================================================
@@ -159,7 +162,7 @@
 
 % inclusao de cada capítulo, alterar a gosto (do professor de Metodologia)
 \include{1-intro/texto}			% introdução
-\include{2-fundam/texto}		% fundamentação teórica
+\include{2-revisao/texto}		% fundamentação teórica
 %\include{3-arte/texto}			% estado da arte
 %\include{4-proposta/texto}		% proposta
 %\include{5-valida/texto}		% experimentação e validação
@@ -188,13 +191,13 @@
 %=====================================================
 
 % inclusão de apêndices
-\appendix
+%\appendix
 
 % inclusão de apêndice
-\include{a1-exemplo/texto}
+%\include{a1-exemplo/texto}
 
 % inclusão de apêndice
-\include{a2-exemplo/texto}
+%\include{a2-exemplo/texto}
 
 %=====================================================
 
