@@ -1,1 +1,1 @@
-Relatório final da Iniciação Científica realizada entre os anos de 2019 e 2020 no projeto "Conversores CC-CC para microrredes com geração fotovoltaica".
+Relatório apresentado à Coordenação de Iniciação Científica e Tecnológica da Universidade Federal do Paraná como requisito parcial da conclusão das atividades de Iniciação Científica ou Iniciação em desenvolvimento tecnológico e Inovação - Edital 2019
